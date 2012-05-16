@@ -1,0 +1,18 @@
+These files should, hopefully, get you started in compiling wiringPi as a Ruby module.
+
+You can find WiringPi here: https://projects.drogon.net/raspberry-pi/wiringpi/
+
+You'll need the requisite Ruby header files, so it's best to install using RVM.
+
+These files are for SWIG, loose directions which may or may not get you there
+are as follows:
+
+sudo apt-get install swig
+wget http://project-downloads.drogon.net/files/wiringPi.tgz
+tar xfz wiringPi.tgz
+cd wiringPi/wiringPi
+*** copy wiringPi.i and extconf.rb into this folder ***
+swig -ruby wiringPi.i
+ruby extconf.rb
+make
+make install

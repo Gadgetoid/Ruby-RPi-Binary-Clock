@@ -1,0 +1,12 @@
+These files are provded as-is, without any warrantee or guarantee that you wont fry your Raspberry Pi!
+
+You'll have to set up your own jump-leads, carefully read the GPIO port pin-out and use ./test.rb which
+may or may not help you find out which pin goes to which LED in your own configuration.
+
+Find the pin-out here: http://elinux.org/Rpi_Low-level_peripherals
+
+If you're trying to get a little binary clock up and running then avoid 3v3 and 5v like the plague,
+these pins are closest to the left of your Pi, next to the SD-card slot. You shouldn't need them!
+
+Don't forget to use resistors in series with your LEDs to prevent them turning your Pi into a puff
+of magic blue smoke.
