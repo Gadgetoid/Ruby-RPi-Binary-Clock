@@ -2,10 +2,18 @@ These files should, hopefully, get you started in compiling wiringPi as a Ruby m
 
 You can find WiringPi here: https://projects.drogon.net/raspberry-pi/wiringpi/
 
-You'll need the requisite Ruby header files, so it's best to install using RVM.
+Special thanks to Gordon for writing this handy little library, of which I'm a big fan.
 
-These files are for SWIG, loose directions which may or may not get you there
-are as follows:
+One downside; you'll have to sudo ruby so that WiringPi can do its stuff.
+
+To compile, you'll need the requisite Ruby header files, so it's best to install using RVM.
+
+There's a handy guide to installing Ruby on the Pi here: http://elinux.org/RPi_Ruby_on_Rails#Installing_Ruby_on_Rails_on_Raspberry_Pi
+
+But you might want to ignore the bits about Rails, ie use: "curl -L get.rvm.io | bash -s stable"
+
+These files are for SWIG,
+loose directions which may or may not get them compiled for you under Debian on the Pi are as follows:
 
 sudo apt-get install swig
 wget http://project-downloads.drogon.net/files/wiringPi.tgz
